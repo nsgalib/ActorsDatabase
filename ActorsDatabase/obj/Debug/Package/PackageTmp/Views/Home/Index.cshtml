@@ -1,0 +1,29 @@
+﻿@model IEnumerable<ActorsDatabase.Models.Actors>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@{
+    int count = 0;
+}
+
+<div class="linkBtn">
+    @Html.ActionLink("Create New Record", "Create", null, new { @class = "btn btn-default" })
+</div>
+<div class="flexContainer">
+    @foreach (var item in Model)
+    {
+        if (count % 4 == 0)
+        {
+            <br />
+            <br />
+        }
+        <div class="dbItem">
+            <a href="@Url.Action("Details", new {id = item.ID })">
+                <img class="img-responsive" src="@Url.Content(item.Image)" />
+            </a>
+        </div>
+        count++;
+    }
+</div>

@@ -1,0 +1,138 @@
+﻿@model ActorsDatabase.Models.Actors
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<div id="info">
+    <div id="actorImage">
+        <img src="@Url.Content(Model.Image)" style="width:174px; height:217px;" />
+        <br /><br />
+        @Html.DisplayFor(model => model.Name)
+    </div>
+    <div id="actorInfo">
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Info)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Info)
+            </dd>
+            <dt>&nbsp;</dt>
+            <dd>&nbsp;</dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Country)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Country)
+            </dd>
+            <dt>&nbsp;</dt>
+            <dd>&nbsp;</dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Age)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Age)
+            </dd>
+            <dt>&nbsp;</dt>
+            <dd>&nbsp;</dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Gender)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Gender)
+            </dd>
+            <dt>&nbsp;</dt>
+            <dd>&nbsp;</dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.NetWorth)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.NetWorth)
+            </dd>
+        </dl>
+    </div>
+</div>
+
+<div id="bottonButtons">
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }, new { @class = "btn btn-default" })&nbsp;
+    @Html.ActionLink("Delete", "Delete", new { id = Model.ID }, new { @class = "btn btn-default" })&nbsp;
+    @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-default" })
+</div>
+
+@*<div id="createForm">
+    <table class="detailTable">
+
+        <tr>
+            <td style="vertical-align: top;">
+                <img src="@Url.Content(Model.Image)" style="width:174px; height:217px;" />
+                <br /><br />
+                @Html.DisplayFor(model => model.Name)
+            </td>
+            <td style="vertical-align: top; text-align: left;">
+                <dl class="dl-horizontal">
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Info)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Info)
+                    </dd>
+                    <dt>&nbsp;</dt>
+                    <dd>&nbsp;</dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Country)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Country)
+                    </dd>
+                    <dt>&nbsp;</dt>
+                    <dd>&nbsp;</dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Age)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Age)
+                    </dd>
+                    <dt>&nbsp;</dt>
+                    <dd>&nbsp;</dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Gender)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Gender)
+                    </dd>
+                    <dt>&nbsp;</dt>
+                    <dd>&nbsp;</dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.NetWorth)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.NetWorth)
+                    </dd>
+                </dl>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <p>
+                    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }, new { @class = "btn btn-default" })&nbsp;
+                    @Html.ActionLink("Delete", "Delete", new { id = Model.ID }, new { @class = "btn btn-default" })&nbsp;
+                    @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-default" })
+                </p>
+            </td>
+        </tr>
+    </table>
+   
+</div>*@
+
+

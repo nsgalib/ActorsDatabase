@@ -1,0 +1,103 @@
+﻿
+
+.bodyColor{
+    background-color: #f1eded;
+}
+
+.large-box {
+    padding: 30px;
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #c3bfbf;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.detailTable{
+    background-color: #fff;
+    text-align: center;
+}
+
+.detailTable td{
+    padding: 20px;
+}
+
+.topDiv{
+    padding: 10px;
+    text-align: center;
+    background-color: #0e73c0;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 10px;
+  
+}
+
+#indexTable{
+    background-color: #fff;
+}
+
+#indexTable td{
+    padding: 15px;
+}
+
+#indexTable th{
+    padding: 15px;
+}
+
+.createLink{
+    padding: 10px;
+}
+
+#indexBG{
+    background-color: #ffffff;
+}
+
+#createForm{
+    background-color: #fff;
+    padding: 20px;
+}
+
+.linkBtn{
+    text-align: center;
+    padding: 20px;
+}
+
+#info{
+    margin-top: 0;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    background-color: #ffffff;
+}
+
+#actorImage{
+    text-align: center;
+    padding: 40px;
+}
+
+#actorInfo{
+    vertical-align: top;
+    text-align: left;
+    padding: 40px;
+}
+
+#bottonButtons {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+@media screen and (max-width: 370px) {
+    #info{
+        display: block;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    #info {
+        display: block;
+        padding: 20px;
+    }
+}
